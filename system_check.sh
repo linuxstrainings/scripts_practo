@@ -13,7 +13,7 @@ clear
 if [ $UID -ne 0 ]
 
 then 
-echo -e "\n you need to root...\n"
+echo -e "\n You need to be root...\n"
 
 exit 8
 
@@ -43,16 +43,16 @@ if [ ${ans} -eq 1 ]
 
 then
 lscpu
+
 elif [ ${ans} -eq 2 ]
 
 then
 fdisk -h
 fi
-
 elif[ ${ans} -eq 3 ]
 
 then
-
+htop
 elif [ ${ans} -eq 4 ]
 
 then
@@ -61,30 +61,12 @@ elif
 if [ ${ans} -eq 5 ]
 
 then
-
-elifif [ ${ans} -eq 6 ]
+df -h
+elif [ ${ans} -eq 6 ]
 
 
 
 echo -e "\n Please enter a valid choice (1 - 10)"
 
 exit 9 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

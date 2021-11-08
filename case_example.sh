@@ -4,6 +4,8 @@
 #mailto: gpnkolo@gmail.com
 #Description:
 
+clear
+
 check=`runlevel | awk '{print $2}'`
 case $check in 
 	1)
@@ -15,7 +17,10 @@ case $check in
 	3)
 	echo "you're on runlevel 3, its a Non-graghic mode"
 	;;
+	4)
+        echo "you're on runlevel 3, its a Non-graghic mode"
+	;;
 	5)
-	echo "you're on runlevel 5, its a Graphical mode"
+	echo -e "\nyou're on runlevel 5, its a Graphical mode\n"
 	;;
 esac
