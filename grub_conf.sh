@@ -1,10 +1,9 @@
-#!/bin/bash 
+#!/bin/bash
+#Author: Peter N
+#Date:
+#mailto: gpnkolo@gmail.com
+#Description: This will work only for centos 6
 
-#Description 
-
-#Author 
-
-#Date 
 
 z=`grep default /etc/grub.conf|awk -F= '(print $2)'`
 
